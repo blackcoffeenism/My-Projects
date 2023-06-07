@@ -1,0 +1,57 @@
+<MD3Card>
+    padding: "1dp"
+    size_hint: None, None
+    size: "350dp", "150dp"
+    pos_hint: {"center_x": .5, "center_y":.5}
+    elevation: 1
+    adaptive_size:True
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding:"0.5dp"
+        AsyncImage:
+            id:im
+            source: root.source
+            fit_mode:'cover'
+            nocache: True
+        MDLabel:
+            id: label
+            text: root.text
+            adaptive_size: True
+            color: (0.2, 0.2, 0.2, 0.8)
+            pos: "12dp", "12dp"
+            bold: True
+        MDRaisedButton:
+            id:link
+            link: root.link
+            job_location: root.job_location
+            job_salary: root.job_salary
+            company: root.company
+            text: "Details"
+            size_hint: (1, 0.2)
+            size: '300dp', '30dp'
+            md_bg_color: '#2F3C7E'
+            pos_hint: {"center_x": .5, "center_y":.5}
+            on_release: root.button_pressed()
+
+            
+
+
+MDScreen:
+    md_bg_color: '#FBEAEB'
+    MDBoxLayout:
+        orientation: 'vertical'
+        pos_hint: {"center_x": .5, "center_y":.5}
+        
+        MDTopAppBar:
+            title: "Python Developer"
+            md_bg_color: '#2F3C7E'
+            elevation: 1
+        MDScrollView:
+            MDList:
+                id: box
+                size_hint:None,None
+                adaptive_size: True
+                spacing: "10dp"
+                pos_hint: {"center_x": 1, "center_y":1}
+
