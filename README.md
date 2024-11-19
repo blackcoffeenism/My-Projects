@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @blackcoffeenism
-- 👀 I’m computer engineering student looking for some experience in software dev.
+- 👀 I’m computer engineer.
       You can check my previous works, just check branches of this repository.
-- 🌱 I’m currently learning python desktop apps
 - 📫 How to reach me ... Telegram - @blanknear
 
 <!---
